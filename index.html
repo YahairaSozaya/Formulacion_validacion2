@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="caja__contenedora" id="caja__contenedora">
+            <div class="texto__button">
+                <div class="texto__button-box" id="uno">
+                    <p class="texto__button-titulo">¿Ya te registraste?</p>
+                    <p class="texto__button-subtitulo">Inicia sesión para entrar a la página</p>
+                    <button class="texto__button-btn " id="button-sesion">Iniciar sesión</button>
+                </div>
+
+                <div class="texto__button-box" id="dos">
+                    <p class="texto__button-titulo">¿Aún no te has registrado?</p>
+                    <p class="texto__button-subtitulo">Registrate para que puedas iniciar sesión</p>
+                    <button class="texto__button-btn" id="button-register" type="submit">Registrarse</button>
+                </div>
+            </div>
+
+            <div class="inicio-registro" id="inicio-registro">
+                <div class="inicioSesion" id="inicioSesion">
+                    <form action="" id="formulario__inicio">
+
+                        <h2 class="button_entrar-registro">Inicio de sesión</h2>
+                        <div  id="grupo__correo" class="formulario__grupo-input">
+                            <input id="correo" type="text" name="correo" class="formulario__input" placeholder="Correo Electrónico">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            <p class="formulario__input-error">El correo solo puede tener letras, números, puntos, guiones y guión bajo</p>
+                        </div>
+                        
+                        
+                        <div id="grupo__password" class="formulario__grupo-input">
+                            <input id="password" name="password" type="text"  class="formulario__input" placeholder="Contraseña">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            <p class="formulario__input-error">La contraseña solo puede tener de 4 a 12 dígitos</p>
+                        </div>
+                    
+                        <button id="entrar" class="entrar">Entrar</button>
+                    </form>
+                </div>
+
+                <div class="registro" id="registro">
+                    <form action="">
+                        <h2>Registrarse</h2>
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Correo Electrónico">
+                        <input type="text" placeholder="Usuario">
+                        <input type="text" placeholder="Contraseña">
+                        <button id="registrate">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
